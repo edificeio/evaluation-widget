@@ -1,0 +1,25 @@
+<evaluation-widget>
+    <div class="widget edumalin">
+        <div class="row">
+          <div class="twelve cell centered-text">
+            <a href="https://edumalin.fr" target="_blank">
+              <img
+                src="/assets/widgets/edumalin-widget/edumalin.png"
+                width="40"
+                height="40"
+                alt="edumalin"
+              />
+              <h1><i18n>edumalin</i18n></h1>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve cell ng-scope" ng-repeat="item in widget.data">
+            <a href="[[item.buttonLink]]" target="_blank">
+              <h2 class="emptyscreen-header">[[item.title]]</h2>
+              <div class="subtitle">[[item.type.name]]</div>
+            </a>
+          </div>
+        </div>
+      </div>
+</evaluation-widget>
